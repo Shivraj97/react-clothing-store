@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import CustomButtom from "../custom-button/custom-button.component";
 import CartItem from "../cart-item/cart-item.component";
 
 import "./cart-dropdown.styles.scss";
@@ -14,7 +13,7 @@ const CartDropdown = ({ cartItems }) => (
         <CartItem key={CartItem.id} item={cartItem} />
       ))}
     </div>
-    <CustomButtom>GO TO CHECKOUT</CustomButtom>
+    <CustomButton>GO TO CHECKOUT</CustomButton>
   </div>
 );
 
